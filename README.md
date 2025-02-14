@@ -1,3 +1,29 @@
+**Left Outer Join Interview Question:**
+
+create table tablea(Id int)  
+create table tableb(Id int)
+
+insert into tablea values(1)  
+insert into tablea values(1)   
+insert into tablea values(1)    
+insert into tablea values(2)    
+insert into tablea values(2)    
+insert into tablea values(3)    
+insert into tablea values(4)   
+
+insert into tableb values(1)    
+insert into tableb values(1)    
+insert into tableb values(2)    
+insert into tableb values(2)    
+insert into tableb values(4)    
+
+select * from tablea    
+select * from tableb    
+select * from tablea left outer join tableb on tablea.Id =tableb.Id
+
+![image](https://github.com/user-attachments/assets/ca498800-e041-4cc7-bf0a-691e9bbeaeb6)
+
+
 **Self join in sql example (employee manager)**
 ```
 create table tbl_EMP(Id int , Name varchar(10),Manager int)
